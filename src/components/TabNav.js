@@ -31,6 +31,11 @@ export default function TabNav() {
           >
             Episodes
           </Menu.Item>
+          <Menu.Item
+            header as={NavLink} exact to ="/search"
+          >
+            Search
+          </Menu.Item>
         </Menu>
     );
 }
