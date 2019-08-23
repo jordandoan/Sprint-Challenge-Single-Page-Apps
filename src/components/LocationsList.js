@@ -17,7 +17,7 @@ export default function LocationsList() {
     }
     return (
         <div className="location-list grid-view">
-            {locations.map(location => <LocationCard key={location.id} episode={location}/>)}
+            {locations.map(location => <LocationCard key={location.id} location={location}/>)}
         </div>
         )
 }

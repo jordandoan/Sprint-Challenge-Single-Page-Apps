@@ -12,28 +12,33 @@ export default function TabNav() {
           <Menu.Item
             header as={NavLink} exact to ="/"
           >
+            <Icon name="home"/>
             Home Page
           </Menu.Item>
           <Menu.Item
             header as={NavLink} exact to ="/characters"
           >
+            <Icon name="users"/>
             Characters
           </Menu.Item>
   
           <Menu.Item
             header as={NavLink} exact to ="/locations"
           >
+            <Icon name="location arrow"/>
             Locations
           </Menu.Item>
   
           <Menu.Item
             header as={NavLink} exact to ="/episodes"
           >
+            <Icon name="film"/>
             Episodes
           </Menu.Item>
           <Menu.Item
             header as={NavLink} exact to ="/search"
           >
+            <Icon name="search"/>
             Search
           </Menu.Item>
         </Menu>
