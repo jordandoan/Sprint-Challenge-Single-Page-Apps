@@ -1,22 +1,21 @@
 import React from "react";
 import {Card} from "semantic-ui-react";
 
-export default function LocationCard(props) {
-  let location = props.location;
+export default function EpisodeCard(props) {
+  let episode = props.episode;
   return (
     <Card>
       <Card.Content>
         <Card.Header>
-          {location.name}
+          {episode.name}
         </Card.Header>
         <Card.Description>
-        {location.type} - {location.dimension}
+          {episode.episode}
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <p className="location">{location.residents.length} residents</p>
+        Aired on: {episode.air_date}
       </Card.Content>
-      
     </Card>
   )
 }
